@@ -1,0 +1,30 @@
+﻿@model MvcKarol.Models.IssueViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Issue</legend>
+        
+        <div class="display-label">Type</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TbtypeN.Name)
+    </div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IssueName)
+    </div>
+
+    <div class="display-label">Text</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IssueText)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.IssueId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

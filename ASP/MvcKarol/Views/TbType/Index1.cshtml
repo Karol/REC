@@ -1,0 +1,33 @@
+﻿@model MvcKarol.Models.TypViewModel
+
+@{
+    ViewBag.Title = "TbType";
+}
+
+<h2>TbType</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.TypAll) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.TbTypeID}) |
+            @Html.ActionLink("Details", "Details", new { id = item.TbTypeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TbTypeID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,46 @@
+﻿@model MvcKarol.Models.IssueViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+    <th>
+    typ
+    </th> 
+        <th>
+            Name
+        </th>
+        <th>
+            Text
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.IssueAll) {
+    <tr>
+    <td>
+    @Html.DisplayFor(modelItem => item.TbType.Name)
+    </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TbIssueID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TbIssueID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TbIssueID })
+        </td>
+    </tr>
+    
+}
+
+</table>

@@ -1,0 +1,20 @@
+﻿@model MvcKarol.Models.TypViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TbType</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TypName)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TypID }) |
+    @Html.ActionLink("Back to List", "Index1")
+</p>

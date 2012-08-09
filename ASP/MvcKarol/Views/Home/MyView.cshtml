@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MvcKarol.Models.TbType>
+
+@{
+    ViewBag.Title = "ViewType_Issue";
+}
+
+<h2>ViewType_Issue</h2>
+
+<select id="selType"> 
+   @foreach (var item in Model)
+   {
+    <option value ='@item.TbTypeID'>@item.Name</option>
+   }
+</select>
