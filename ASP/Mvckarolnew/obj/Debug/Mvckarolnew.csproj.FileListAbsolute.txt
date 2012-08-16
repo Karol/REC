@@ -1,7 +1,0 @@
-D:\Visual Studio 2010\Projects\Mvckarolnew\bin\Mvckarolnew.dll
-D:\Visual Studio 2010\Projects\Mvckarolnew\bin\Mvckarolnew.pdb
-D:\Visual Studio 2010\Projects\Mvckarolnew\bin\EntityFramework.dll
-D:\Visual Studio 2010\Projects\Mvckarolnew\bin\EntityFramework.xml
-D:\Visual Studio 2010\Projects\Mvckarolnew\obj\Debug\Mvckarolnew.dll
-D:\Visual Studio 2010\Projects\Mvckarolnew\obj\Debug\Mvckarolnew.pdb
-D:\Visual Studio 2010\Projects\Mvckarolnew\obj\Debug\Mvckarolnew.csprojResolveAssemblyReference.cache
