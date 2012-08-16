@@ -1,0 +1,47 @@
+﻿@model Mvckarolnew.Models.ViewTypeToType
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>Typ główny</th>
+        <th>Podtyp</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.NoRepeadParent) 
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.ListTypeToType.First(p=>p.IdParent == item).Type.Name)
+        </td>
+    </tr>
+
+    foreach (var x in Model.ListTypeToType)
+    {
+       if (x.IdParent == item)
+       {
+        <tr>
+        <td></td>
+            <td>
+            @Html.DisplayFor(modelItem => x.Type1.Name)
+            </td>
+        
+            <td>
+            @Html.ActionLink("Edit", "Edit", new { id = x.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = x.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = x.Id })
+            </td>
+        </tr>            
+       }
+    }
+}
+
+</table>

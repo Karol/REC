@@ -1,0 +1,28 @@
+﻿@model Mvckarolnew.Models.ViewTypeToType
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h2>Are you sure you want to delete this?</h2>
+<fieldset>
+    <legend>TypeToType</legend>
+
+    <div class="display-label">Typ główny</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ParentTypeV.Name)
+    </div>
+
+    <div class="display-label">Podtyp</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SubTypeV.Name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Cancel", "Index")
+    </p>
+}

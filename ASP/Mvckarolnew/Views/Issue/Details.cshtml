@@ -1,0 +1,30 @@
+﻿@model Mvckarolnew.Models.ViewIssue
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Issue</legend>
+
+    <div class="display-label">Typ</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TypeV.Name)
+    </div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NameV)
+    </div>
+
+    <div class="display-label">Text</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TextV)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.IdV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

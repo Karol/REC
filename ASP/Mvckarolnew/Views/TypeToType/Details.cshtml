@@ -1,0 +1,25 @@
+﻿@model Mvckarolnew.Models.ViewTypeToType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TypeToType</legend>
+
+    <div class="display-label">Typ główny</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ParentTypeV.Name)
+    </div>
+
+    <div class="display-label">Podtyp</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SubTypeV.Name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.IdV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

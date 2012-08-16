@@ -1,0 +1,26 @@
+﻿@model Mvckarolnew.Models.ViewType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Type</legend>
+
+    
+    <div class="display-label">Id Typu</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdV)
+    </div>
+
+    <div class="display-label">Nazwa</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NameV)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.IdV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
