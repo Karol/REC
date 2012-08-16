@@ -23,10 +23,10 @@ namespace Mvckarolnew.Models.Mapping
             // Relationships
             this.HasRequired(t => t.Type)
                 .WithMany(t => t.TypeToTypes)
-                .HasForeignKey(d => d.IdParent);
+                .HasForeignKey(d => d.IdParent).WillCascadeOnDelete(true);
             this.HasRequired(t => t.Type1)
                 .WithMany(t => t.TypeToTypes1)
-                .HasForeignKey(d => d.IdSub);
+                .HasForeignKey(d => d.IdSub).WillCascadeOnDelete(false);
 
         }
     }
