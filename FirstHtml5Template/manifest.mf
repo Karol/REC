@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: nl.bbdev.nbwebproject/1
+OpenIDE-Module-Localizing-Bundle: nl/bbdev/nbwebproject/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
