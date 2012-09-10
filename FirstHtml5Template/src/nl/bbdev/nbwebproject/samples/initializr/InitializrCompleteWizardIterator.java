@@ -37,8 +37,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 // TODO define position attribute
-@TemplateRegistration(folder = "Project/Web", displayName = "#InitializrComplete_displayName", description = "InitializrCompleteDescription.html", iconBase = "nl/bbdev/nbwebproject/samples/initializr/InitializrComplete.png", content = "InitializrCompleteProject.zip")
-@Messages("InitializrComplete_displayName=Complete Initializr Structure")
+@TemplateRegistration(folder = "Project/Other", displayName = "#InitializrComplete_displayName", description = "InitializrCompleteDescription.html", iconBase = "nl/bbdev/nbwebproject/samples/initializr/InitializrComplete.png", content = "InitializrCompleteProject.zip")
+@Messages("InitializrComplete_displayName=ResponsiveHTML5Template")
 public class InitializrCompleteWizardIterator implements WizardDescriptor./*Progress*/InstantiatingIterator {
 
     private int index;
